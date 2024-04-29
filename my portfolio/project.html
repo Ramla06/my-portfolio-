@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f2f2f2; /* Light gray background */
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #101028; /* Navy blue background */
+      padding: 20px;
+      border-radius: 8px; /* Rounded corners */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+      color: white; /* Text color */
+      display: flex; /* Use flexbox for layout */
+    }
+    .navlist {
+      background: black;
+      box-shadow: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-between; /* Move navitems to the top */
+      align-items: center;
+      margin-bottom: 40px; /* Add margin to create space between navitems and content */
+      width: calc(10% -20px); /* Calculate the width to exclude padding */
+      margin-left: -20px; /* Compensate for container padding */
+    }
+    .navitem {
+      list-style: none;
+      font-size: 20px; /* Adjusted font size */
+    }
+    .navitem a {
+      text-decoration: none;
+      color: white;
+      padding: 5px; /* Adjust padding for better spacing */
+    }
+    a.active, a:hover {
+      background: #1b9bff;
+      transition: .5s;
+      border-radius: 5px; /* Apply rounded corners on hover */
+    }
+
+    h2 {
+      color: #f3e9e9;
+    }
+    p {
+      line-height: 1.6;
+      color: white; /* Set text color to white */
+    }
+    .btn-back {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .btn-back:hover {
+      background-color: #333;
+    }
+    .project-description {
+      flex: 1; /* Take up remaining space */
+    }
+    .project-description p {
+      line-height: 1.6;
+      margin-bottom: 20px; /* Add spacing between paragraphs */
+    }
+    .project-item {
+      list-style: none;
+      margin-left: auto; /* Push project item to the right */
+      text-align: center; /* Center align the project name */
+    }
+    .project-item img {
+      max-width: 250px; /* Set max width for the image */
+      height: auto;
+      margin-bottom: 10px; /* Add spacing between image and name */
+    }
+    .project-name {
+      color: #f3e9e9; /* Heading text color */
+      margin: 0; /* Remove default margin */
+    }
+    .project-item a {
+      text-decoration: none;
+      color: white;
+    }
+    .comment-box {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .comment-box textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: none;
+    }
+    .comment-box button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .comment-box button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation items -->
+<ul class="navlist">
+  <li class="navitem">
+    <a href="home.html">Home</a>
+  </li>
+  <li class="navitem">
+    <a href="about.html">About</a>
+  </li>
+  <li class="navitem">
+    <a href="contact.html">Contact</a>
+  </li>
+</ul>
+
+<div class="container">
+  <div class="project-description">
+    <h2>My Project</h2>
+    <p>
+      This is a description of my project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut mauris nec ligula sodales efficitur sit amet nec tellus.
+    </p>
+    
+  </div>
+  <!-- Links and images for previous projects -->
+  <div class="project-item">
+    <img src="images/project1.png" alt="Project 1">
+    <h3 class="project-name">MentAfrica</h3>
+    <a href="https://github.com/Ramla06/ISproject" target="_blank">View Project</a>
+  </div>
+</div>
+
+<!-- Comment Box -->
+<div class="comment-box">
+  <h3>Leave a Comment</h3>
+  <textarea placeholder="Write your comment here..." rows="5"></textarea><br>
+  <button>Submit</button>
+</div>
+
+<!-- Button to go back to home page -->
+<div style="text-align: center; margin-top: 20px;">
+  <a href="home.html" style="background-color: black; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Back to Home</a>
+</div>
+
+</body>
+</html>
